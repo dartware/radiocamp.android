@@ -1,4 +1,4 @@
-package com.dartware.radiocamp.ui.theme
+package com.dartware.radiocamp.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
