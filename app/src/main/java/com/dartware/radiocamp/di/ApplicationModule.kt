@@ -1,7 +1,7 @@
 package com.dartware.radiocamp.di
 
-import com.dartware.radiocamp.data.repositories.RadiostationsRepositoryImpl
-import com.dartware.radiocamp.domain.repositories.RadiostationsRepository
+import android.app.Application
+import com.dartware.radiocamp.data.local.databases.RadiocampDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,8 +14,6 @@ object ApplicationModule {
 
 	@Provides
 	@Singleton
-	fun provodeRadiostationsRepository(): RadiostationsRepository {
-		return RadiostationsRepositoryImpl()
-	}
+	fun provideRadiocampDatabase(application: Application): RadiocampDatabase = RadiocampDatabase.create(application)
 
 }
