@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radiocamp</string>
+    <string name="radiostations_list_loading_error">Ошибка загрузки</string>
+    <string name="search">Поиск</string>
+    <string name="save">Сохранить</string>
+    <string name="add">Добавить</string>
+    <string name="title">Название</string>
+    <string name="enter_title">Укажите название</string>
+    <string name="stream_url">Ссылка на поток</string>
+    <string name="enter_stream_url">Укажите ссылку на поток</string>
+</resources>

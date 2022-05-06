@@ -5,6 +5,7 @@ import com.dartware.radiocamp.R
 import com.dartware.radiocamp.core.Resource
 import com.dartware.radiocamp.data.local.databases.RadiocampDatabase
 import com.dartware.radiocamp.data.mappers.toRadiostation
+import com.dartware.radiocamp.data.mappers.toRadiostationEntity
 import com.dartware.radiocamp.domain.models.Radiostation
 import com.dartware.radiocamp.domain.repositories.RadiostationsRepository
 import kotlinx.coroutines.flow.Flow
@@ -41,6 +42,10 @@ class RadiostationsRepositoryImpl @Inject constructor(
 			}
 
 		}
+	}
+
+	override suspend fun save(radiostation: Radiostation) {
+		dao.save(radiostation.toRadiostationEntity())
 	}
 
 }
