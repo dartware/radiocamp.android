@@ -17,7 +17,8 @@
 		<activity
 			android:name=".presentation.activities.MainActivity"
 			android:exported="true"
-			android:theme="@style/Theme.Radiocamp">
+			android:theme="@style/Theme.Radiocamp"
+			android:windowSoftInputMode="adjustResize">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
