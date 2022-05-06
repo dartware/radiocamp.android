@@ -6,4 +6,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface RadiostationsRepository {
 	fun getAll(): Flow<Resource<List<Radiostation>>>
+	suspend fun save(radiostation: Radiostation)
 }
